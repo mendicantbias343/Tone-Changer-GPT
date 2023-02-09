@@ -1,29 +1,14 @@
-# frontend
+# Tone Changer using GPT3
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple application that converts a sentence to a specified tone. <br>
+Deployed: https://tonechangergpt.vercel.app/
 
-## Recommended IDE Setup
+# Getting started
+Clone or download. <br>
+Start with 
+```npm install```
+<br>
+```npm run dev```
+<br>
+Read more about this here: https://medium.com/@rkakodker/using-gpt-to-build-a-simple-application-c3646a597b02
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
