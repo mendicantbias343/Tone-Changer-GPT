@@ -8,6 +8,7 @@
           <span class="text-sm">
             Change the tone of your text to better suite the environment you'll
             be saying it in. Character limitation is <b>280 chars</b>.
+            You can start by running a <a @click="runDemo">demo</a>.
           </span>
 
           <span
@@ -105,6 +106,16 @@ export default {
     };
   },
   methods: {
+    async runDemo(){
+      const sentences = ["Success is not final, failure is not fatal: it is the courage to continue that counts.","Why did the tomato turn red? Because it saw the salad dressing!","Do you have any plans for the weekend?","The greatest glory in living lies not in never falling, but in rising every time we fall.","I just ate the most amazing pizza with all my favorite toppings."]
+      this.mainText = sentences[sentences.length * Math.random() | 0]
+      this.intendedChoice = "Pirate Tone"
+      if(!this.dailyCountReached){
+        generateInputText()
+      }
+      
+    },
+
     async isAvailableForPlay() {
       let resp = await fetch(this.rootURI + "/api/checklimit").catch((err) => {
         console.log("Fire! : " + err);
