@@ -8,7 +8,7 @@
           <span class="text-sm">
             Change the tone of your text to better suite the environment you'll
             be saying it in. Character limitation is <b>280 chars</b>.
-            You can start by running a <a @click="runDemo">demo</a>.
+            You can start by running a <a @click="runDemo" class="underline underline-offset-4">demo</a>.
           </span>
 
           <span
@@ -111,7 +111,7 @@ export default {
       this.mainText = sentences[sentences.length * Math.random() | 0]
       this.intendedChoice = "Pirate Tone"
       if(!this.dailyCountReached){
-        generateInputText()
+        this.generateInputText()
       }
       
     },
