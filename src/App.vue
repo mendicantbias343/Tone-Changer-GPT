@@ -53,7 +53,7 @@
               Choose your tone
             </option>
             <option>Serious, Professional Tone</option>
-            <option>Semi-Professional, But Official tone</option>
+            <option>Semi-Professional, But Official Tone</option>
             <option>Casual, Friendly and Conversational Tone</option>
             <option>Pirate Tone</option>
           </select>
